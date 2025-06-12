@@ -5,6 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Globalmed consultancy - MBBS Abroad Consultant</title>
     
+    <style>
+        /* Responsive improvements */
+        .nav-container,
+        .hero-container,
+        .container,
+        .services-intro,
+        .universities-grid,
+        .myths-grid,
+        .services-grid,
+        .benefits-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .nav-buttons,
+        .hero-container,
+        .benefits-grid,
+        .services-grid,
+        .universities-grid,
+        .myths-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .benefit-card,
+        .service-card,
+        .university-card,
+        .myth-card {
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: calc(33.333% - 40px);
+        }
+
+        @media screen and (max-width: 992px) {
+            .benefit-card,
+            .service-card,
+            .university-card,
+            .myth-card {
+                flex: 1 1 calc(50% - 30px);
+                max-width: calc(50% - 30px);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav-container,
+            .hero-container,
+            .benefits-grid,
+            .services-grid,
+            .universities-grid,
+            .myths-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .benefit-card,
+            .service-card,
+            .university-card,
+            .myth-card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .contact-bar {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            footer div {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+        }</style>
     <link rel="stylesheet" href="Style_Home.css">
 </head>
 <body>
@@ -17,7 +106,7 @@
         <div class="nav-container">
             <div class="logo"> <img  class="logoImg"  src="./images/Logo.jpg"/> Globalmed consultancy</div>
             <div class="nav-buttons">
-                <a href="#" class="whatsapp-btn">📱 +91 8875254904</a>
+                <a href="#" class="whatsapp-btn">📱 +91 8107768164</a>
                 <a class="whatsapp-btn" href="mailto:globalmedconsultancy787@gmail.com" style="color:#ccc;"><span> ✉️ Email Us</span></a>
                 <div class="menu-toggle">EXPLORE MENU ☰</div>
             </div>
@@ -348,7 +437,7 @@
     <div style="flex:1; min-width:250px; margin-bottom:20px;">
       <h3 style="color:#FFCC00;">Contact Us</h3>
       <p><strong>Email:</strong> <a href="mailto:globalmedconsultancy787@gmail.com" style="color:#ccc;">globalmedconsultancy787@gmail.com</a></p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/8875254904" target="_blank" style="color:#ccc;">+91 8875254904</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/8107768164" target="_blank" style="color:#ccc;">+91 8107768164</a></p>
       <p><strong>Instagram:</strong> <a href="https://www.instagram.com/globalmed_consultancy/" target="_blank" style="color:#ccc;">@globalmed_consultancy</a></p>
     </div>
 
