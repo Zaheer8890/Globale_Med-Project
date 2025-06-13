@@ -500,5 +500,104 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+             /* Responsive improvements */
+        .nav-container,
+        .hero-container,
+        .container,
+        .services-intro,
+        .universities-grid,
+        .myths-grid,
+        .services-grid,
+        .benefits-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .nav-buttons,
+        .hero-container,
+        .benefits-grid,
+        .services-grid,
+        .universities-grid,
+        .myths-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .benefit-card,
+        .service-card,
+        .university-card,
+        .myth-card {
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: calc(33.333% - 40px);
+        }
+
+        @media screen and (max-width: 992px) {
+            .benefit-card,
+            .service-card,
+            .university-card,
+            .myth-card {
+                flex: 1 1 calc(50% - 30px);
+                max-width: calc(50% - 30px);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav-container,
+            .hero-container,
+            .benefits-grid,
+            .services-grid,
+            .universities-grid,
+            .myths-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .benefit-card,
+            .service-card,
+            .university-card,
+            .myth-card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .contact-bar {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            footer div {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+
+            
+        }
+
+        .logo {
+  text-decoration: none;
+  /* ensures it takes parent text color */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between image and text */
+}
         
     
