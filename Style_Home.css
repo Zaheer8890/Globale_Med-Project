@@ -266,16 +266,25 @@
         }
 
         .services-intro {
-            max-width: 600px;
-            margin-bottom: 50px;
-        }
+    max-width: 600px;
+    margin: 0 auto 60px; /* center + bottom spacing */
+    text-align: center;   /* center-align all inner text */
+    
+}
 
-        .services-intro h2 {
-            font-size: 32px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #333;
-        }
+.services-intro h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #333;
+
+}
+
+.services-intro p {
+    padding-bottom: 50px;
+}
+
+
 
         .services-grid {
             display: grid;
