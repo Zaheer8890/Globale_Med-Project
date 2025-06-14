@@ -12,7 +12,7 @@
 
         /* Header */
         .header-top {
-            background: linear-gradient(135deg, #d32f2f, #c62828);
+            background: linear-gradient(135deg, #0c2d56, #0c2d56);
             color: white;
             text-align: center;
             padding: 8px 0;
@@ -20,7 +20,7 @@
         }
 
         .navbar {
-            background: linear-gradient(135deg, #1565c0, #0d47a1);
+            background: linear-gradient(135deg, #ffffff, #ffffff);
             padding: 15px 0;
             position: relative;
         }
@@ -35,7 +35,7 @@
         }
 
         .logo {
-            color: white;
+            color: #0c2d56;
             font-size: 24px;
             font-weight: bold;
             display: flex;
@@ -59,7 +59,7 @@
         }
 
         .whatsapp-btn {
-            background: #25d366;
+            background: #0c2d56;
             color: white;
             padding: 10px 20px;
             border-radius: 25px;
@@ -71,8 +71,8 @@
         }
 
         .events-btn {
-            background: #2196f3;
-            color: white;
+            background: #0c2d56;
+            color: black;
             padding: 10px 20px;
             border-radius: 25px;
             text-decoration: none;
@@ -89,7 +89,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #1565c0, #42a5f5);
+            background: linear-gradient(135deg, #0c2d56, #0c2d56);
             color: white;
             padding: 80px 0;
             position: relative;
@@ -132,7 +132,7 @@
 
         .btn-primary {
             background: white;
-            color: #1565c0;
+            color: #0c2d56;
         }
 
         .btn-secondary {
@@ -200,7 +200,7 @@
         }
 
         .contact-btn {
-            background: #d32f2f;
+            background: #0c2d56;
             color: white;
             padding: 12px 30px;
             border-radius: 25px;
@@ -238,7 +238,7 @@
             width: 80px;
             height: 80px;
             margin: 0 auto 20px;
-            background: linear-gradient(135deg, #2196f3, #1976d2);
+            background: linear-gradient(135deg, #0c2d56, #0c2d56);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -272,6 +272,185 @@
     
 }
 
+/* images */
+
+
+.City {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      animation: fadeInUp 1s ease-in-out;
+      text-align: center;
+      overflow-x: auto;
+      margin-top: 50px;
+}
+
+
+
+.City-image {
+    flex: 1 1 400px;
+}
+
+.City-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.City-text {
+    flex: 1 1 400px;
+    text-align: left;
+}
+
+.City-text h2 {
+    font-size: 2rem;
+    color: #0c2d56;
+    margin-bottom: 15px;
+}
+
+.City-text p {
+    font-size: 1rem;
+    color: #0c2d56;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0c2d56;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0c2d56;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .City {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .City-text, .City-image {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+.IceCollage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;               /* Center horizontally */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.IceCollage img {
+     width: 100%;
+    max-width: 1000px;
+    max-height: 500px;           /* ✅ LIMIT HEIGHT */
+    height: auto;
+    object-fit: contain;         /* ✅ Keep aspect ratio without cropping */
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: shadow */
+}
+
+.Garden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;               /* Center horizontally */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.Garden img {
+    width: 100%;
+    max-width: 1000px;            /* Optional: set a max width */
+    height: auto;                /* Maintain aspect ratio */
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;         /* Optional: rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: shadow */
+}
+
+.RunBy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;               /* Center horizontally */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.RunBy img {
+    width: 100%;
+    max-width: 1000px;            /* Optional: set a max width */
+    height: auto;                /* Maintain aspect ratio */
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;         /* Optional: rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: shadow */
+}
+
+
+
+.DegreeStage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;               /* Center horizontally */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.DegreeStage img {
+    width: 100%;
+    max-width: 1000px;            /* Optional: set a max width */
+    height: auto;                /* Maintain aspect ratio */
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;         /* Optional: rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: shadow */
+}
+
+
 .services-intro h2 {
     font-size: 32px;
     font-weight: bold;
@@ -302,7 +481,7 @@
         .service-icon {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, #1976d2, #1976d2);
+            background: linear-gradient(135deg, #0c2d56, #0c2d56);
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -351,7 +530,7 @@
             align-items: center;
             justify-content: center;
             font-size: 48px;
-            color: #1976d2;
+            color: #0c2d56;
         }
 
         .university-info {
@@ -367,7 +546,7 @@
         }
 
         .fee-structure {
-            color: #1976d2;
+            color: #0c2d56;
             font-weight: bold;
         }
 
@@ -402,7 +581,7 @@
             width: 80px;
             height: 80px;
             margin: 0 auto 20px;
-            background: linear-gradient(135deg, #1976d2, #1976d2);
+            background: linear-gradient(135deg, #0c2d56, #0c2d56);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -423,7 +602,7 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background: #1976d2;
+            background: #0c2d56;
             color: white;
             width: 60px;
             height: 60px;

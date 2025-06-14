@@ -7,11 +7,12 @@
     <link rel="icon" href="./images/Logo.jpg" type="image/x-icon">
 
     <link rel="stylesheet" href="Style_Home.css">
+    <link rel="stylesheet" href="styles/gallery.css" />
 </head>
 <body>
     <!-- Header -->
     <div id="home" class="header-top">
-        Globalmed consultancy : MBBS Abroad Consultant
+        Globalmed Consultancy : MBBS Abroad Consultant
     </div>
 
     <!-- Placeholder where the navbar will be inserted -->
@@ -34,7 +35,7 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Most Trusted Study Abroad Consultants in India</h1>
+                <h1>Most Trusted Study Abroad Consultancy in India</h1>
                 <div class="hero-buttons">
                     <a href="#universities" class="btn-primary">⚙️ Select Your University</a>
                     <a href="https://wa.me/+918875254904" class="btn-secondary">📞 Talk to an Expert</a>
@@ -54,6 +55,9 @@
         </div>
     </section>
 
+
+
+
     <!-- Who We Are -->
     <section  class="who-we-are">
         <div id="Contact" class="container">
@@ -61,16 +65,172 @@
             <div class="contact-bar">
                 <div class="contact-item">
                     <span>📞</span>
-                    <span> <a href=" https://wa.me/+918875254904 " target="_blank" style="color:#ccc;"> Call Us </a></span>
+                    <span> <a href=" https://wa.me/+918875254904 " target="_blank" style="color:#0c2d56;"> Call  </a></span>
                 </div>
                 <a href="https://wa.me/+918875254904" class="contact-btn">Online MBBS Counselling</a>
                 <div class="contact-item">
                     <span>✉️</span>
-                    <a href="mailto:globalmedconsultancy787@gmail.com" style="color:#ccc;"><span> Email Us</span></a>
+                    <a href="mailto:globalmedconsultancy787@gmail.com" style="color:#0c2d56;"><span> Email </span></a>
                 </div>
             </div>
         </div>
     </section>
+
+
+<!-- home.html-->
+
+<div id="imported-content" style="margin: 3rem 0;"></div>
+
+<script>
+  fetch('Home.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('imported-content').innerHTML = data;
+    })
+    .catch(error => {
+      console.error("Error loading HTML:", error);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+    <!-- Images Rotated -->
+
+    <!-- Rotating Medical Image Slider Section -->
+<div style="padding: 3rem 1rem; margin: 3rem 0; text-align: center; font-family: Arial, sans-serif;">
+  <h2 style="font-size: 2rem; margin-bottom: 2rem;">Explore Medical Education</h2>
+
+  <div id="carousel" style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  ">
+    <img id="carousel-image" src="./images/STUDY MBBS.jpeg" 
+         alt="Medical Image" style="width: 100%; height: auto; object-fit: cover; border-radius: 12px;">
+  </div>
+</div>
+
+<script>
+  const images = [
+    "./images/Study-MBBS-abroad 3.jpg",
+    "./images/MBBS Second rotate.jpg",
+    "./images/MBBS 5.jpg",
+  ];
+
+  let index = 0;
+  const imgElement = document.getElementById("carousel-image");
+
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    imgElement.src = images[index];
+  }, 4000); // 4 seconds per slide
+</script>
+
+
+
+    <!-- Flags -->
+
+
+    <div style="padding: 3rem 1rem; margin: 3rem 0; text-align: center; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+  <h2 style="font-size: 2rem; margin-bottom: 2rem;">TOP MBBS DESTINATIONS</h2>
+
+  <div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
+    
+    <!-- First Row -->
+    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+      <div style="flex: 1 1 30%; min-width: 150px; text-align: center;">
+        <img src="https://flagcdn.com/w320/ru.png" alt="Russia Flag" style="width: 100%; max-width: 120px;">
+        <p style="margin-top: 0.5rem;">Russia</p>
+      </div>
+      <div style="flex: 1 1 30%; min-width: 150px; text-align: center;">
+        <img src="https://flagcdn.com/w320/kg.png" alt="Kyrgyzstan Flag" style="width: 100%; max-width: 120px;">
+        <p style="margin-top: 0.5rem;">Kyrgyzstan</p>
+      </div>
+      <div style="flex: 1 1 30%; min-width: 150px; text-align: center;">
+        <img src="https://flagcdn.com/w320/kz.png" alt="Kazakhstan Flag" style="width: 100%; max-width: 120px;">
+        <p style="margin-top: 0.5rem;">Kazakhstan</p>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+      <div style="flex: 1 1 30%; min-width: 150px; text-align: center;">
+        <img src="https://flagcdn.com/w320/ge.png" alt="Georgia Flag" style="width: 100%; max-width: 120px;">
+        <p style="margin-top: 0.5rem;">Georgia</p>
+      </div>
+      <div style="flex: 1 1 30%; min-width: 150px; text-align: center;">
+        <img src="https://flagcdn.com/w320/uz.png" alt="Uzbekistan Flag" style="width: 100%; max-width: 120px;">
+        <p style="margin-top: 0.5rem;">Uzbekistan</p>
+      </div>
+      <div style="flex: 1 1 30%; min-width: 150px; text-align: center;">
+        <img src="https://flagcdn.com/w320/ph.png" alt="Philippines Flag" style="width: 100%; max-width: 120px;">
+        <p style="margin-top: 0.5rem;">Philippines</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+   <div class="City">
+    <div class="City-image">
+        <img src="./images/City.jpeg" alt="A scenic view of a modern city skyline">
+    </div>
+    <div class="City-text">
+        <h2>A Global Medical Education Within Your Reach</h2>
+        <p>Why limit your dreams within borders when the world is full of opportunity? Countries like Russia, Kyrgyzstan, Kazakhstan, and Georgia offer high-quality MBBS programs at affordable costs — all in modern, well-equipped universities recognized by NMC, WHO, and other global medical bodies. Here, you don’t just gain a degree; you gain a global perspective, setting the foundation for a future where your skills are valued across continents.</p>
+        
+    </div>
+</div>
+
+
+
+<div id="osh-content" style="margin: 3rem 0;"></div>
+
+<script>
+  fetch('OshMain.html')
+    .then(response => response.text())
+    .then(data => {
+      // Optional: Remove <html>, <head>, <body> tags if present
+      const cleanedData = data.replace(/<\/?(html|head|body)>/gi, '');
+      document.getElementById('osh-content').innerHTML = cleanedData;
+    })
+    .catch(error => {
+      console.error("Failed to load OshMain.html:", error);
+    });
+</script>
+
+
+    
+
+    <div class="City">
+    <div class="City-image">
+        <img src="./images/IceCollage.jpeg" alt="A scenic view of a modern collage skyline">
+    </div>
+    <div class="City-text">
+        <h2>Study Without Barriers, Dream Without Limits</h2>
+        <p>Studying MBBS abroad removes the common obstacles students face at home — no sky-high tuition fees, no donation demands, and in many cases, no competitive entrance exams beyond NEET eligibility. What you need is ambition, not influence. With simplified admission processes and English-medium instruction, your path to becoming a doctor becomes clearer, faster, and more achievable.</p>
+        
+    </div>
+</div>
+
+
 
     <!-- Benefits Section -->
     <section class="benefits">
@@ -117,6 +277,22 @@
             </div>
         </div>
     </section>
+
+
+
+
+    <div class="City">
+    <div class="City-image">
+        <img src="./images/Doctor.jpeg" alt="A scenic view of a modern city skyline">
+    </div>
+    <div class="City-text">
+        <h2>Experience Cultures, Grow as a Global Citizen</h2>
+        <p>Studying abroad offers more than just academic knowledge — it’s an immersion into diverse cultures, languages, and lifestyles. You’ll interact with students from across Asia, Africa, and Europe, expanding your worldview and building friendships that cross borders. From snowy Russian cities to the warm, welcoming streets of Bishkek, you’ll learn to adapt, grow, and thrive in multicultural settings — skills that matter in both life and medicine.</p>
+       
+    </div>
+</div>
+
+
 
     <!-- Services Section -->
     <section class="services">
@@ -166,6 +342,20 @@
         </div>
     </section>
 
+
+    <div class="City">
+    <div class="City-image">
+        <img src="./images/RunBy.jpg" alt="A scenic view of a modern city skyline">
+    </div>
+    <div class="City-text">
+        <h2>Real-World Clinical Experience from Day One</h2>
+        <p>International medical universities emphasize early clinical exposure and hands-on training. Through partnerships with hospitals and research centers, you’ll apply what you learn in real medical settings — gaining practical skills, confidence, and a deep understanding of patient care. This blend of theory and practice ensures you graduate not only with a degree but with the competence to serve anywhere in the world.</p>
+        
+    </div>
+</div>
+
+
+
     <!-- Universities Section -->
     <section class="universities">
         <div class="container">
@@ -179,7 +369,7 @@
                     </div>
                     <div class="university-info">
                         <h3>Mari State University , Russia</h3>
-                        <div class="fee-structure">Fees Structure: $. 9000</div>
+                        
                     </div>
                 </div>
                 
@@ -189,7 +379,7 @@
                     </div>
                     <div class="university-info">
                         <h3>Tver State Medical University, Russia</h3>
-                        <div class="fee-structure">Fees Structure: $. 9000</div>
+                        
                     </div>
                 </div>
                 
@@ -199,7 +389,7 @@
                     </div>
                     <div class="university-info">
                         <h3>Orenburg State Medical University , Russia</h3>
-                        <div class="fee-structure">Fees Structure: $. 9000</div>
+                        
                     </div>
                 </div>
                 
@@ -209,7 +399,7 @@
                     </div>
                     <div class="university-info">
                         <h3>Perm State Medical University , Russia</h3>
-                        <div class="fee-structure">Fees Structure: $. 9000</div>
+                        
                     </div>
                 </div>
                 
@@ -219,7 +409,7 @@
                     </div>
                     <div class="university-info">
                         <h3>PSKOV State University , Russia</h3>
-                        <div class="fee-structure">Fees Structure: $. 9000</div>
+                        
                     </div>
                 </div>
                 
@@ -228,8 +418,8 @@
                         <img src="./images/OSH.jpeg"/>
                     </div>
                     <div class="university-info">
-                        <h3>OSH State University</h3>
-                        <div class="fee-structure">Fees Structure: $. 9000</div>
+                        <h3>OSH State University , Kyrgyzstan</h3>
+                        
                     </div>
                 </div>
                 
@@ -237,6 +427,20 @@
             </div>
         </div>
     </section>
+
+
+    <div class="City">
+    <div class="City-image">
+        <img src="./images/DegreeStage.jpeg" alt="A scenic view of a modern city skyline">
+    </div>
+    <div class="City-text">
+        <h2>Invest in a Journey That Transforms You</h2>
+        <p>An MBBS abroad isn’t just a career move — it’s a life experience. You’ll return not only as a qualified doctor but as a confident, independent, and globally aware individual. From celebrating local festivals to learning new customs, the cultural journey will shape your character as much as your studies shape your mind. So take the step. Embrace the challenge. Let the world be your classroom — and your future be without borders.</p>
+       
+    </div>
+</div>
+
+
 
     <!-- Myths Section -->
     <section class="myths">
@@ -339,7 +543,7 @@
 
     </script>
 
-    <footer style="background-color:#1976d2; color:white; padding:30px 20px; font-family:sans-serif;">
+    <footer style="background-color:#0c2d56; color:white; padding:30px 20px; font-family:sans-serif;">
   <div style="display:flex; flex-wrap:wrap; justify-content:space-between; max-width:1200px; margin:auto;">
     
     <!-- About Us -->

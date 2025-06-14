@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study MBBS Overseas - Your Medical Journey Starts Here</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(135deg, #0c2d56 0%, #0c2d56 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            max-width: 1200px;
+            padding: 0 20px;
+            color: white;
+        }
+
+        .medical-students {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .student {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .student:nth-child(1) {
+            top: 15%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .student:nth-child(2) {
+            top: 25%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .student:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        .student:nth-child(4) {
+            bottom: 30%;
+            right: 10%;
+            animation-delay: 1s;
+        }
+
+        .student:nth-child(5) {
+            top: 50%;
+            left: 5%;
+            animation-delay: 3s;
+        }
+
+        .student:nth-child(6) {
+            top: 60%;
+            right: 5%;
+            animation-delay: 5s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-20px) rotate(2deg); }
+            50% { transform: translateY(-10px) rotate(-1deg); }
+            75% { transform: translateY(-15px) rotate(1deg); }
+        }
+
+        .main-title {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: slideInUp 1s ease-out;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            animation: slideInUp 1s ease-out 0.3s both;
+        }
+
+        .quote-container {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: slideInUp 1s ease-out 0.6s both;
+        }
+
+        .quote {
+            font-size: 1.8rem;
+            font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .quote-author {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            animation: slideInUp 1s ease-out 0.9s both;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .medical-icon {
+            position: absolute;
+            font-size: 30px;
+            opacity: 0.3;
+            animation: drift 8s ease-in-out infinite;
+        }
+
+        .medical-icon:nth-child(1) {
+            top: 20%;
+            left: 25%;
+            animation-delay: 0s;
+        }
+
+        .medical-icon:nth-child(2) {
+            top: 40%;
+            right: 30%;
+            animation-delay: 2s;
+        }
+
+        .medical-icon:nth-child(3) {
+            bottom: 25%;
+            left: 40%;
+            animation-delay: 4s;
+        }
+
+        .medical-icon:nth-child(4) {
+            top: 70%;
+            right: 45%;
+            animation-delay: 1s;
+        }
+
+        @keyframes drift {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(10px, -10px) rotate(90deg); }
+            50% { transform: translate(-5px, 5px) rotate(180deg); }
+            75% { transform: translate(-10px, -5px) rotate(270deg); }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 50px;
+            animation: slideInUp 1s ease-out 1.2s both;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.5rem;
+            }
+            
+            .quote {
+                font-size: 1.4rem;
+            }
+            
+            .stats-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .student {
+                width: 80px;
+                height: 80px;
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="medical-students">
+            <div class="student">👨‍⚕️</div>
+            <div class="student">👩‍⚕️</div>
+            <div class="student">🧑‍⚕️</div>
+            <div class="student">👨‍🔬</div>
+            <div class="student">👩‍🔬</div>
+            <div class="student">🧑‍🔬</div>
+        </div>
+
+        <div class="floating-elements">
+            <div class="medical-icon">🩺</div>
+            <div class="medical-icon">💊</div>
+            <div class="medical-icon">🏥</div>
+            <div class="medical-icon">⚕️</div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="main-title">Study MBBS Overseas</h1>
+            <p class="subtitle">Transform Your Dreams into Reality</p>
+            
+            <div class="quote-container">
+                <div class="quote">
+                    "The art of medicine consists of amusing the patient while nature cures the disease."
+                </div>
+                <div class="quote-author">- Voltaire</div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Universities</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+            </div>
+
+            <a href="#" class="cta-button">Start Your Journey</a>
+        </div>
+    </div>
+
+    <script>
+        // Add dynamic quote rotation
+        const quotes = [
+            {
+                text: "The art of medicine consists of amusing the patient while nature cures the disease.",
+                author: "Voltaire"
+            },
+            {
+                text: "Medicine is not only a science; it is also an art. It does not consist of compounding pills and plasters.",
+                author: "Paracelsus"
+            },
+            {
+                text: "The good physician treats the disease; the great physician treats the patient who has the disease.",
+                author: "William Osler"
+            },
+            {
+                text: "Wherever the art of medicine is loved, there is also a love of humanity.",
+                author: "Hippocrates"
+            },
+            {
+                text: "To study medicine is to study the human condition in all its complexity.",
+                author: "Medical Wisdom"
+            }
+        ];
+
+        let currentQuoteIndex = 0;
+        const quoteElement = document.querySelector('.quote');
+        const authorElement = document.querySelector('.quote-author');
+
+        function rotateQuotes() {
+            currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+            const currentQuote = quotes[currentQuoteIndex];
+            
+            quoteElement.style.opacity = '0';
+            authorElement.style.opacity = '0';
+            
+            setTimeout(() => {
+                quoteElement.textContent = currentQuote.text;
+                authorElement.textContent = `- ${currentQuote.author}`;
+                quoteElement.style.opacity = '1';
+                authorElement.style.opacity = '1';
+            }, 500);
+        }
+
+        // Rotate quotes every 5 seconds
+        setInterval(rotateQuotes, 5000);
+
+        // Add smooth scroll for CTA button
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Add your navigation logic here
+            console.log('Navigate to application form or next section');
+        });
+    </script>
+</body>
+</html>
