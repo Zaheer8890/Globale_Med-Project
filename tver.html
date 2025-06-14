@@ -197,6 +197,7 @@
   </style>
 
   <link rel="stylesheet" href="Style_Home.css">
+  <link rel="stylesheet" href="imagteroatater.css">
 </head>
 <body>
 
@@ -330,7 +331,7 @@
 
       <div class="City">
     <div class="City-image">
-        <img src="./images/GreenGarden.jpeg" alt="A scenic view of a Student taking a stage">
+        <img src="./images/Tver.jpeg" alt="A scenic view of a Student taking a stage">
     </div>
     <div class="City-text">
         <h2>Tver State Medical University – A Leading Center for Medical Education in Russiaa</h2>
@@ -338,6 +339,24 @@
         <p>Tver State Medical University, located between Moscow and St. Petersburg, is one of Russia’s most prestigious and well-established institutions for medical education. With a strong legacy since 1936, the university is renowned for its high academic standards, modern infrastructure, and emphasis on clinical practice. Offering MBBS and postgraduate medical programs in English and Russian, Tver attracts students from over 50 countries. Its affiliated hospitals provide hands-on training in fields such as general medicine, dentistry, pharmacy, and pediatrics, under the guidance of experienced medical professionals. Tver State Medical University stands as a gateway to a globally recognized medical degree with affordable tuition and a supportive international environment.</p>
     </div>
 </div>
+
+
+
+<!-- image section rotating -->
+
+<!-- Mari University Image Slideshow -->
+<div class="image-slideshow">
+  <h2 class="slider-title">Tver State Medical University</h2>
+  <p class="slider-subline">Glimpses of life and learning at Tver State Medical University</p>
+
+  <div class="slideshow-container">
+    <img class="slide-image" src="./images/tvercollage.jpg" alt="tver 1">
+    <img class="slide-image" src="./images/tverCity.jpg" alt="tver 2">
+    <img class="slide-image" src="./images/Tver State Medical University.jpg" alt="tver 3">
+    <img class="slide-image" src="./images/tverUniversityIce.jpg" alt="tver 4">
+  </div>
+</div>
+
 
 
       <div id="universities-section">
@@ -419,6 +438,30 @@
   <hr style="margin:20px 0; border-color:#444;">
   <p style="text-align:center; font-size:14px; color:#bbb;">© 2025 Globalmed_consultancy . All rights reserved.</p>
 </footer>
+
+
+<!-- to work image slide-->
+
+<script>
+  const slides = document.querySelectorAll('.slide-image');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((img, i) => {
+      img.classList.remove('active');
+      if (i === index) img.classList.add('active');
+    });
+  }
+
+  function startSlideshow() {
+    showSlide(currentSlide);
+    currentSlide = (currentSlide + 1) % slides.length;
+  }
+
+  setInterval(startSlideshow, 4000); // change every 4 seconds
+  startSlideshow(); // initial call
+</script>
+
 
 </body>
 </html>

@@ -197,6 +197,7 @@
   </style>
 
   <link rel="stylesheet" href="Style_Home.css">
+  <link rel="stylesheet" href="imagteroatater.css">
 </head>
 <body>
 
@@ -330,7 +331,7 @@
 
       <div class="City">
     <div class="City-image">
-        <img src="./images/City.jpeg" alt="A scenic view of a Student taking a stage">
+        <img src="./images/pskov.jpeg" alt="A scenic view of a Student taking a stage">
     </div>
     <div class="City-text">
         <h2>Pskov State University – A Modern Hub of Innovation and Learning in Western Russia</h2>
@@ -340,6 +341,23 @@
 </p>
     </div>
 </div>
+
+
+
+<!-- image section rotating -->
+
+<!-- Mari University Image Slideshow -->
+<div class="image-slideshow">
+  <h2 class="slider-title">PSKOV State University</h2>
+  <p class="slider-subline">Glimpses of life and learning at PSKOV State University</p>
+
+  <div class="slideshow-container">
+    <img class="slide-image" src="./images/pskov.jpeg" alt="pskov 1">
+    <img class="slide-image" src="./images/pskovWinter.jpg" alt="pskov 2">
+    <img class="slide-image" src="./images/PskovMain.jpg" alt="pskov 3">
+  </div>
+</div>
+
 
       <div id="universities-section">
         <h2 id="universities" class="section-title">Top Medical Universities</h2>
@@ -423,6 +441,29 @@
   <hr style="margin:20px 0; border-color:#444;">
   <p style="text-align:center; font-size:14px; color:#bbb;">© 2025 Globalmed_consultancy . All rights reserved.</p>
 </footer>
+
+
+<!-- to work image slide-->
+
+<script>
+  const slides = document.querySelectorAll('.slide-image');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((img, i) => {
+      img.classList.remove('active');
+      if (i === index) img.classList.add('active');
+    });
+  }
+
+  function startSlideshow() {
+    showSlide(currentSlide);
+    currentSlide = (currentSlide + 1) % slides.length;
+  }
+
+  setInterval(startSlideshow, 4000); // change every 4 seconds
+  startSlideshow(); // initial call
+</script>
 
 </body>
 </html>

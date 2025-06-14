@@ -197,6 +197,7 @@
   </style>
 
   <link rel="stylesheet" href="Style_Home.css">
+  <link rel="stylesheet" href="imagteroatater.css">
 </head>
 <body>
 
@@ -330,7 +331,7 @@
 
       <div class="City">
     <div class="City-image">
-        <img src="./images/City.jpeg" alt="A scenic view of a Student taking a stage">
+        <img src="./images/perm.jpeg" alt="A scenic view of a Student taking a stage">
     </div>
     <div class="City-text">
         <h2>Perm State Medical University – A Premier Destination for Medical Education in Russia</h2>
@@ -340,6 +341,23 @@
 .</p>
     </div>
 </div>
+
+
+
+<!-- image section rotating -->
+
+<!-- Mari University Image Slideshow -->
+<div class="image-slideshow">
+  <h2 class="slider-title">Perm State Medical University</h2>
+  <p class="slider-subline">Glimpses of life and learning at Perm State Medical University</p>
+
+  <div class="slideshow-container">
+    <img class="slide-image" src="./images/perm.jpeg" alt="perm 1">
+    <img class="slide-image" src="./images/permCity.jpg" alt="perm 2">
+    <img class="slide-image" src="./images/permcollagesecondary.jpg" alt="perm 3">
+  </div>
+</div>
+
 
 
       <div id="universities-section">
@@ -425,6 +443,29 @@
   <hr style="margin:20px 0; border-color:#444;">
   <p style="text-align:center; font-size:14px; color:#bbb;">© 2025 Globalmed_consultancy . All rights reserved.</p>
 </footer>
+
+
+<!-- to work image slide-->
+
+<script>
+  const slides = document.querySelectorAll('.slide-image');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((img, i) => {
+      img.classList.remove('active');
+      if (i === index) img.classList.add('active');
+    });
+  }
+
+  function startSlideshow() {
+    showSlide(currentSlide);
+    currentSlide = (currentSlide + 1) % slides.length;
+  }
+
+  setInterval(startSlideshow, 4000); // change every 4 seconds
+  startSlideshow(); // initial call
+</script>
 
 </body>
 </html>

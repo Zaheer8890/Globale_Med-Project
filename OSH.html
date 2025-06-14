@@ -200,6 +200,7 @@
    <link rel="icon" href="./images/Logo.jpg" type="image/x-icon">
 
   <link rel="stylesheet" href="Style_Home.css">
+  <link rel="stylesheet" href="imagteroatater.css">
 </head>
 <body>
 
@@ -314,12 +315,29 @@
 
       <div class="City">
     <div class="City-image">
-        <img src="./images/OSH state.jpeg" alt="A scenic view of a modern city skyline">
+        <img src="./images/OSH.jpeg" alt="A scenic view of a modern city skyline">
     </div>
     <div class="City-text">
         <h2>OSH State University – Gateway to Quality Education in Central Asia</h2>
         <p>Located in the scenic Fergana Valley and surrounded by the breathtaking mountains of southern Kyrgyzstan, Osh State University is one of the leading public universities in Central Asia. Renowned for its affordable, high-quality education and multicultural environment, OSH offers a wide range of programs in medicine, engineering, humanities, and science — all taught in English, Russian, or Kyrgyz. With a growing international student body and a strong focus on academic excellence, Osh State University provides a vibrant, globally connected campus life in one of the region’s most historic and culturally rich cities.</p>
     </div>
+</div>
+
+<!-- image section rotating -->
+
+<!-- Mari University Image Slideshow -->
+<div class="image-slideshow">
+  <h2 class="slider-title">OSH State University</h2>
+  <p class="slider-subline">Glimpses of life and learning at OSH University</p>
+
+  <div class="slideshow-container">
+    <img class="slide-image" src="./images/OSH state.jpeg" alt="OSH 1">
+    <img class="slide-image" src="./images/Cap.jpeg" alt="OSH 2">
+    <img class="slide-image" src="./images/City.jpeg" alt="OSH 3">
+    <img class="slide-image" src="./images/Collage.jpeg" alt="OSH 3">
+    <img class="slide-image" src="./images/StageStudent.jpeg" alt="OSH 3">
+    <img class="slide-image" src="./images/IceCollage.jpeg" alt="OSH 3">
+  </div>
 </div>
 
 
@@ -328,6 +346,9 @@
         <p style="text-align: center; color: #666; margin-bottom: 30px;">
           Connect with Globalmed consultancy and we will help you get admission in top universities.
         </p>
+
+
+      
 
         <div class="universities-grid">
           <div onclick="location.href='Mari.html'" class="university-card">
@@ -404,6 +425,29 @@
   <hr style="margin:20px 0; border-color:#444;">
   <p style="text-align:center; font-size:14px; color:#bbb;">© 2025 Globalmed_consultancy . All rights reserved.</p>
 </footer>
+
+
+<!-- to work image slide-->
+
+<script>
+  const slides = document.querySelectorAll('.slide-image');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((img, i) => {
+      img.classList.remove('active');
+      if (i === index) img.classList.add('active');
+    });
+  }
+
+  function startSlideshow() {
+    showSlide(currentSlide);
+    currentSlide = (currentSlide + 1) % slides.length;
+  }
+
+  setInterval(startSlideshow, 4000); // change every 4 seconds
+  startSlideshow(); // initial call
+</script>
 
 </body>
 </html>

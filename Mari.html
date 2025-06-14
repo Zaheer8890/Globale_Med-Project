@@ -208,6 +208,7 @@
 
   </style>
 
+  <link rel="stylesheet" href="imagteroatater.css">
   <link rel="stylesheet" href="Style_Home.css">
 </head>
 <body>
@@ -342,7 +343,7 @@
 
       <div class="City">
     <div class="City-image">
-        <img src="./images/StageStudent.jpeg" alt="A scenic view of a Student taking a stage">
+        <img src="./images/MariMain.jpg" alt="A scenic view of a Student taking a stage">
     </div>
     <div class="City-text">
         <h2>Explore the Future of Global Learning</h2>
@@ -350,6 +351,25 @@
         <p>Join us at Mari State  University, where your journey to becoming a global medical professional begins amidst the beauty of nature and the warmth of a vibrant academic community.</p>
     </div>
 </div>
+
+
+
+<!-- image section rotating -->
+
+<!-- Mari University Image Slideshow -->
+<div class="image-slideshow">
+  <h2 class="slider-title">Mari State University</h2>
+  <p class="slider-subline">Glimpses of life and learning at Mari University</p>
+
+  <div class="slideshow-container">
+    <img class="slide-image" src="./images/Mari2.jpg" alt="Mari 1">
+    <img class="slide-image" src="./images/Mari Hostel.jpg" alt="Mari 2">
+    <img class="slide-image" src="./images/MariMain.jpg" alt="Mari 3">
+  </div>
+</div>
+
+
+
 
 
 
@@ -434,6 +454,28 @@
   <hr style="margin:20px 0; border-color:#444;">
   <p style="text-align:center; font-size:14px; color:#bbb;">© 2025 Globalmed_consultancy . All rights reserved.</p>
 </footer>
+
+
+<script>
+  const slides = document.querySelectorAll('.slide-image');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((img, i) => {
+      img.classList.remove('active');
+      if (i === index) img.classList.add('active');
+    });
+  }
+
+  function startSlideshow() {
+    showSlide(currentSlide);
+    currentSlide = (currentSlide + 1) % slides.length;
+  }
+
+  setInterval(startSlideshow, 4000); // change every 4 seconds
+  startSlideshow(); // initial call
+</script>
+
 
 </body>
 </html>
