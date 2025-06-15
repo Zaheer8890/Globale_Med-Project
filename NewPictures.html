@@ -1,0 +1,352 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBBS Abroad Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .banner {
+            width: 1200px;
+            height: 600px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 60px;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .doctor-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .doctor-illustration {
+            width: 280px;
+            height: 400px;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .doctor-head {
+            width: 80px;
+            height: 80px;
+            background: #f4c2a1;
+            border-radius: 50%;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .doctor-head::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            right: 10px;
+            height: 40px;
+            background: #8b4513;
+            border-radius: 20px 20px 50% 50%;
+        }
+
+        .glasses {
+            position: absolute;
+            top: 25px;
+            left: 15px;
+            right: 15px;
+            height: 25px;
+            background: rgba(0, 0, 0, 0.1);
+            border: 2px solid #333;
+            border-radius: 50%;
+        }
+
+        .doctor-body {
+            width: 120px;
+            height: 180px;
+            background: white;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .tie {
+            width: 20px;
+            height: 80px;
+            background: #333;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+        }
+
+        .stethoscope {
+            position: absolute;
+            top: 20px;
+            right: -15px;
+            width: 30px;
+            height: 60px;
+            border: 3px solid #4a90e2;
+            border-radius: 50px;
+            border-bottom: none;
+        }
+
+        .clipboard {
+            position: absolute;
+            bottom: 20px;
+            left: -20px;
+            width: 40px;
+            height: 50px;
+            background: #8b4513;
+            border-radius: 3px;
+        }
+
+        .pen {
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            width: 3px;
+            height: 30px;
+            background: #333;
+            border-radius: 2px;
+        }
+
+        .text-section {
+            flex: 1.5;
+            padding-left: 60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .main-title {
+            font-size: 4rem;
+            font-weight: 900;
+            color: white;
+            line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(255, 107, 107, 0.4);
+        }
+
+        .floating-icons {
+            position: absolute;
+            top: 50px;
+            right: 100px;
+            z-index: 1;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .icon:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .icon:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .variant-2 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .variant-3 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .variant-4 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+    </style>
+</head> -->
+<!-- <body>
+    <!-- Banner Variant 1 
+    <div class="banner">
+        <div class="doctor-section">
+            <div class="doctor-illustration">
+                <div class="doctor-head">
+                    <div class="glasses"></div>
+                </div>
+                <div class="doctor-body">
+                    <div class="tie"></div>
+                    <div class="stethoscope"></div>
+                    <div class="clipboard">
+                        <div class="pen"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-section">
+            <h1 class="main-title">REASONS TO<br>STUDY MBBS IN<br>ABROAD</h1>
+            <p class="subtitle">Discover world-class medical education opportunities</p>
+            <button class="cta-button">Learn More</button>
+        </div>
+        <div class="floating-icons">
+            <div class="icon">🎓</div>
+            <div class="icon">🌍</div>
+            <div class="icon">⚕️</div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- Banner Variant 2 ->
+    <div class="banner variant-2">
+        <div class="doctor-section">
+            <div class="doctor-illustration">
+                <div class="doctor-head">
+                    <div class="glasses"></div>
+                </div>
+                <div class="doctor-body">
+                    <div class="tie"></div>
+                    <div class="stethoscope"></div>
+                    <div class="clipboard">
+                        <div class="pen"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-section">
+            <h1 class="main-title">TOP BENEFITS OF<br>MBBS ABROAD<br>PROGRAMS</h1>
+            <p class="subtitle">Quality education at affordable costs</p>
+            <button class="cta-button">Explore Now</button>
+        </div>
+        <div class="floating-icons">
+            <div class="icon">💰</div>
+            <div class="icon">📚</div>
+            <div class="icon">🏥</div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <-- Banner Variant 3 ->
+    <div class="banner variant-3">
+        <div class="doctor-section">
+            <div class="doctor-illustration">
+                <div class="doctor-head">
+                    <div class="glasses"></div>
+                </div>
+                <div class="doctor-body">
+                    <div class="tie"></div>
+                    <div class="stethoscope"></div>
+                    <div class="clipboard">
+                        <div class="pen"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-section">
+            <h1 class="main-title">WHY CHOOSE<br>OVERSEAS MBBS<br>EDUCATION?</h1>
+            <p class="subtitle">Global recognition and career opportunities</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+        <div class="floating-icons">
+            <div class="icon">🌟</div>
+            <div class="icon">🎯</div>
+            <div class="icon">✈️</div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <-- Banner Variant 4 -
+    <div class="banner variant-4">
+        <div class="doctor-section">
+            <div class="doctor-illustration">
+                <div class="doctor-head">
+                    <div class="glasses"></div>
+                </div>
+                <div class="doctor-body">
+                    <div class="tie"></div>
+                    <div class="stethoscope"></div>
+                    <div class="clipboard">
+                        <div class="pen"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-section">
+            <h1 class="main-title">UNLOCK YOUR<br>MEDICAL CAREER<br>ABROAD</h1>
+            <p class="subtitle">Experience world-class facilities and education</p>
+            <button class="cta-button">Apply Today</button>
+        </div>
+        <div class="floating-icons">
+            <div class="icon">🔓</div>
+            <div class="icon">🏆</div>
+            <div class="icon">🎓</div>
+        </div>
+    </div>
+</body>
+</html>  -->

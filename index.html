@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" href="Style_Home.css">
     <link rel="stylesheet" href="styles/gallery.css" />
+     <link rel="stylesheet" href="drhans.css"/>
+    
+    
+
 </head>
 <body>
     <!-- Header -->
@@ -56,6 +60,22 @@
     </section>
 
 
+    
+
+
+     <div class="City">
+    <div class="City-image">
+        <img src="./images/RunBy.jpg" alt="A scenic view of a modern city skyline">
+    </div>
+    <div class="City-text">
+        <h2>Real-World Clinical Experience from Day One</h2>
+        <p>"Globalmed consultancy is not run by agents—it is run by doctors. As medical professionals ourselves, we truly understand the journey, challenges, and dreams of becoming a doctor. That’s why we guide students with honesty, clarity, and first-hand experience. We don’t just promote colleges—we help you choose the right path based on your goals and needs. When you work with us, you're not just getting a consultant, you're getting a mentor who’s walked the same road"</p>
+        
+    </div>
+</div>
+
+
+
 
 
     <!-- Who We Are -->
@@ -78,6 +98,67 @@
     </section>
 
 
+   <!-- dr banner -->
+
+<div class="dr-wrapper">
+   <div class="dr-testimonial-container">
+    <div class="dr-image-section">
+        <div class="dr-image-container">
+            <img src="./images/Doctor.jpeg" alt="Dr. Hans - MBBS Graduate" class="dr-doctor-image">
+        </div>
+        
+        <div class="dr-image-information">
+            <h2 class="dr-image-name">Dr. Hans</h2>
+            <p class="dr-image-degree">(MBBS)</p>
+            <div class="dr-image-university">OSH State University</div>
+            <div class="dr-image-location">📍 Kyrgyzstan</div>
+            <span class="dr-image-fmg-badge">Proud FMG</span>
+        </div>
+        <div class="dr-quote-mark">"</div>
+    </div>
+
+    <div class="dr-content-section">
+
+        
+        <p class="dr-testimonial-text">
+            Studying MBBS at OSH State University in Kyrgyzstan was the best decision of my life...
+        </p>
+    
+
+        <div class="dr-experience-points">
+            <h4>Why I Chose OSH State University:</h4>
+            <div class="dr-point">
+                <span class="dr-point-icon">✓</span>
+                <span>World-class medical education with modern facilities</span>
+            </div>
+            <div class="dr-point">
+                <span class="dr-point-icon">✓</span>
+                <span>Affordable tuition fees compared to other countries</span>
+            </div>
+            <div class="dr-point">
+                <span class="dr-point-icon">✓</span>
+                <span>International recognition and WHO listed university</span>
+            </div>
+            <div class="dr-point">
+                <span class="dr-point-icon">✓</span>
+                <span>Excellent clinical exposure in well-equipped hospitals</span>
+            </div>
+            <div class="dr-point">
+                <span class="dr-point-icon">✓</span>
+                <span>Supportive international student community</span>
+            </div>
+        </div>
+
+        <div class="dr-call-to-action">
+            <div class="dr-cta-text">What are you waiting for?</div>
+            <div class="dr-cta-subtext">Your medical career abroad awaits!...</div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
 <!-- home.html-->
 
 <div id="imported-content" style="margin: 3rem 0;"></div>
@@ -92,8 +173,6 @@
       console.error("Error loading HTML:", error);
     });
 </script>
-
-
 
 
 
@@ -140,6 +219,82 @@
     imgElement.src = images[index];
   }, 4000); // 4 seconds per slide
 </script>
+
+
+
+
+ <!-- Universities Section -->
+    <section class="universities">
+        <div class="container">
+            <h2 id="universities" class="section-title">Top Medical Universities</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">Connect with Globalmed consultancy and we will help you get admission in top universities.</p>
+            
+            <div class="universities-grid">
+                <div onclick="openDetail('1')" class="university-card">
+                    <div class="university-image">
+                        <img src="./images/download.jpeg"/>
+                    </div>
+                    <div class="university-info">
+                        <h3>Mari State University , Russia</h3>
+                        
+                    </div>
+                </div>
+                
+                <div onclick="openDetail('2')" class="university-card">
+                    <div class="university-image">
+                        <img src="./images/Tver.jpeg"/>
+                    </div>
+                    <div class="university-info">
+                        <h3>Tver State Medical University, Russia</h3>
+                        
+                    </div>
+                </div>
+                
+                <div onclick="openDetail('3')" class="university-card">
+                    <div class="university-image">
+                        <img  src="./images/Orenburg.jpeg"/>
+                    </div>
+                    <div class="university-info">
+                        <h3>Orenburg State Medical University , Russia</h3>
+                        
+                    </div>
+                </div>
+                
+                <div onclick="openDetail('4')" class="university-card">
+                    <div class="university-image">
+                        <img src="./images/perm.jpeg"/>
+                    </div>
+                    <div class="university-info">
+                        <h3>Perm State Medical University , Russia</h3>
+                        
+                    </div>
+                </div>
+                
+                <div onclick="openDetail('5')" class="university-card">
+                    <div class="university-image">
+                        <img src="./images/pskov.jpeg"/>
+                    </div>
+                    <div class="university-info">
+                        <h3>PSKOV State University , Russia</h3>
+                        
+                    </div>
+                </div>
+                
+                <div onclick="openDetail('6')" class="university-card">
+                    <div class="university-image">
+                        <img src="./images/OSH.jpeg"/>
+                    </div>
+                    <div class="university-info">
+                        <h3>OSH State University , Kyrgyzstan</h3>
+                        
+                    </div>
+                </div>
+                
+        
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -218,18 +373,6 @@
 </script>
 
 
-    
-
-    <div class="City">
-    <div class="City-image">
-        <img src="./images/pskov city.jpg" alt="A scenic view of a modern collage skyline">
-    </div>
-    <div class="City-text">
-        <h2>Study Without Barriers, Dream Without Limits</h2>
-        <p>Studying MBBS abroad removes the common obstacles students face at home — no sky-high tuition fees, no donation demands, and in many cases, no competitive entrance exams beyond NEET eligibility. What you need is ambition, not influence. With simplified admission processes and English-medium instruction, your path to becoming a doctor becomes clearer, faster, and more achievable.</p>
-        
-    </div>
-</div>
 
 
 
@@ -281,17 +424,18 @@
 
 
 
-
-    <div class="City">
+     <div class="City">
     <div class="City-image">
-        <img src="./images/Doctor.jpeg" alt="A scenic view of a modern city skyline">
+        <img src="./images/pskov city.jpg" alt="A scenic view of a modern collage skyline">
     </div>
     <div class="City-text">
-        <h2>Experience Cultures, Grow as a Global Citizen</h2>
-        <p>Studying abroad offers more than just academic knowledge — it’s an immersion into diverse cultures, languages, and lifestyles. You’ll interact with students from across Asia, Africa, and Europe, expanding your worldview and building friendships that cross borders. From snowy Russian cities to the warm, welcoming streets of Bishkek, you’ll learn to adapt, grow, and thrive in multicultural settings — skills that matter in both life and medicine.</p>
-       
+        <h2>Study Without Barriers, Dream Without Limits</h2>
+        <p>Studying MBBS abroad removes the common obstacles students face at home — no sky-high tuition fees, no donation demands, and in many cases, no competitive entrance exams beyond NEET eligibility. What you need is ambition, not influence. With simplified admission processes and English-medium instruction, your path to becoming a doctor becomes clearer, faster, and more achievable.</p>
+        
     </div>
 </div>
+
+
 
 
 
@@ -344,90 +488,9 @@
     </section>
 
 
-    <div class="City">
-    <div class="City-image">
-        <img src="./images/RunBy.jpg" alt="A scenic view of a modern city skyline">
-    </div>
-    <div class="City-text">
-        <h2>Real-World Clinical Experience from Day One</h2>
-        <p>International medical universities emphasize early clinical exposure and hands-on training. Through partnerships with hospitals and research centers, you’ll apply what you learn in real medical settings — gaining practical skills, confidence, and a deep understanding of patient care. This blend of theory and practice ensures you graduate not only with a degree but with the competence to serve anywhere in the world.</p>
-        
-    </div>
-</div>
 
 
-
-    <!-- Universities Section -->
-    <section class="universities">
-        <div class="container">
-            <h2 id="universities" class="section-title">Top Medical Universities</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 30px;">Connect with Globalmed consultancy and we will help you get admission in top universities.</p>
-            
-            <div class="universities-grid">
-                <div onclick="openDetail('1')" class="university-card">
-                    <div class="university-image">
-                        <img src="./images/download.jpeg"/>
-                    </div>
-                    <div class="university-info">
-                        <h3>Mari State University , Russia</h3>
-                        
-                    </div>
-                </div>
-                
-                <div onclick="openDetail('2')" class="university-card">
-                    <div class="university-image">
-                        <img src="./images/Tver.jpeg"/>
-                    </div>
-                    <div class="university-info">
-                        <h3>Tver State Medical University, Russia</h3>
-                        
-                    </div>
-                </div>
-                
-                <div onclick="openDetail('3')" class="university-card">
-                    <div class="university-image">
-                        <img  src="./images/Orenburg.jpeg"/>
-                    </div>
-                    <div class="university-info">
-                        <h3>Orenburg State Medical University , Russia</h3>
-                        
-                    </div>
-                </div>
-                
-                <div onclick="openDetail('4')" class="university-card">
-                    <div class="university-image">
-                        <img src="./images/perm.jpeg"/>
-                    </div>
-                    <div class="university-info">
-                        <h3>Perm State Medical University , Russia</h3>
-                        
-                    </div>
-                </div>
-                
-                <div onclick="openDetail('5')" class="university-card">
-                    <div class="university-image">
-                        <img src="./images/pskov.jpeg"/>
-                    </div>
-                    <div class="university-info">
-                        <h3>PSKOV State University , Russia</h3>
-                        
-                    </div>
-                </div>
-                
-                <div onclick="openDetail('6')" class="university-card">
-                    <div class="university-image">
-                        <img src="./images/OSH.jpeg"/>
-                    </div>
-                    <div class="university-info">
-                        <h3>OSH State University , Kyrgyzstan</h3>
-                        
-                    </div>
-                </div>
-                
-        
-            </div>
-        </div>
-    </section>
+   
 
 
     <div class="City">

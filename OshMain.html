@@ -60,6 +60,7 @@
       font-weight: bold;
       margin-bottom: 10px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      color: #ffffff;
     }
 
     .university-tagline {
@@ -254,8 +255,11 @@
 }
 
   </style>
+
 </head>
 <body>
+
+
   <section class="osh-featured-section">
     <div class="container">
       <div class="section-header">
@@ -343,5 +347,17 @@
 
 
 
+
 </body>
 </html>
+
+<script>
+  // Smooth scroll for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
