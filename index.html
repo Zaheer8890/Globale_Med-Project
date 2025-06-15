@@ -171,6 +171,30 @@
 </script>
 
 
+<!-- osh university -->
+
+<!-- Unique Featured University Card -->
+<div class="featured-university-wrapper">
+  <div class="featured-university-card">
+    <div class="featured-university-image">
+      <img src="./images/OSH.jpeg" alt="OSH State University" />
+    </div>
+    <div class="featured-university-content">
+      <h2>OSH State University, Kyrgyzstan</h2>
+      <p class="featured-tagline">Our Director's Alma Mater — A Trusted Destination for Indian MBBS Aspirants</p>
+      <ul class="featured-highlights">
+        <li>🎓 WHO-recognized & globally respected</li>
+        <li>🌍 Studied by 100s of Indian students</li>
+        <li>💼 Proven career outcomes & FMGE success</li>
+        <li>🩺 Home to our Director, Dr. Hans (MBBS, OSH)</li>
+      </ul>
+      <a href="javascript:void(0)" onclick="openDetail('1')" class="featured-btn">Explore OSH University</a>
+    </div>
+    <div class="featured-label">Top Choice</div>
+  </div>
+</div>
+
+
 
 
 
@@ -181,15 +205,18 @@
             <p style="text-align: center; color: #666; margin-bottom: 30px;">Connect with Globalmed consultancy and we will help you get admission in top universities.</p>
             
             <div class="universities-grid">
-                <div onclick="openDetail('1')" class="university-card">
+
+                 <div onclick="openDetail('1')" class="university-card">
                     <div class="university-image">
-                        <img src="./images/download.jpeg"/>
+                        <img src="./images/OSH.jpeg"/>
                     </div>
                     <div class="university-info">
-                        <h3>Mari State University , Russia</h3>
+                        <h3>OSH State University , Kyrgyzstan</h3>
                         
                     </div>
-                </div>
+                </div>  
+
+                
                 
                 <div onclick="openDetail('2')" class="university-card">
                     <div class="university-image">
@@ -233,10 +260,10 @@
                 
                 <div onclick="openDetail('6')" class="university-card">
                     <div class="university-image">
-                        <img src="./images/OSH.jpeg"/>
+                        <img src="./images/download.jpeg"/>
                     </div>
                     <div class="university-info">
-                        <h3>OSH State University , Kyrgyzstan</h3>
+                        <h3>Mari State University , Russia</h3>
                         
                     </div>
                 </div>
@@ -589,7 +616,7 @@
         function openDetail(id) { 
 
             if (id === '1') {
-                window.location.href='./Mari.html'
+                window.location.href='./OSH.html'
             } else if (id === '2') {
                 window.location.href='./tver.html'
             } else if (id === '3') {
@@ -599,7 +626,7 @@
             } else if (id === '5') {
                 window.location.href='./pskov.html'
             } else if (id === '6') {
-                window.location.href='./OSH.html'
+                window.location.href='./Mari.html'
             }
 
         }
