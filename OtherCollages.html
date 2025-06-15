@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>More Medical Colleges</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      padding: 15px;
+      background-color: #0c2d56;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .college-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .college-card {
+      background-color: #fff;
+      border: 1px solid #dcdcdc;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .college-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .college-image img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+
+    .college-name {
+      padding: 15px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #0c2d56;
+    }
+  </style>
+
+   <link rel="stylesheet" href="Style_Home.css">
+   <link rel="icon" href="./images/Logo.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="home" class="header-top">
+        Globalmed consultancy : MBBS Abroad Consultant
+    </div>
+
+  
+    <!-- Placeholder where the navbar will be inserted -->
+<div id="navbar"></div>
+
+<!-- Script to load navbar.html -->
+<script>
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    })
+    .catch(error => console.error('Failed to load navbar:', error));
+</script>
+
+<div id="home" class="header-top">
+        
+    </div>
+
+
+
+<!-- Universities Section -->
+    <section class="universities">
+        <div class="container">
+            <h2 id="universities" class="section-title">Top Medical Universities</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">Connect with Globalmed consultancy and we will help you get admission in top universities.</p>
+            
+            <div class="universities-grid">
+                <div onclick="openDetail('1')" class="university-card">
+                    <div class="university-image">
+                        <img src="./images/KazakCollage.jpg"/>
+                    </div>
+                    <div class="university-info">
+                        <h3>Kazakh National Medical University (KazNMU), Kazakhstan</h3>
+                        
+                    </div>
+                </div>
+                
+                <div onclick="openDetail('2')" class="university-card">
+                    <div class="university-image">
+                        <img src="./images/Tbilisi-State-Medical-University-1.jpg"/>
+                    </div>
+                    <div class="university-info">
+                        <h3>TTbilisi State Medical University (TSMU), Georgia</h3>
+                        
+                    </div>
+                </div>
+                
+                <div onclick="openDetail('3')" class="university-card">
+                    <div class="university-image">
+                        <img  src="./images/Asian.jpg"/>
+                    </div>
+                    <div class="university-info">
+                        <h3>Asian Medical Institute , Kyrgyzstan</h3>
+                        
+                    </div>
+                </div>
+                
+                <div onclick="openDetail('4')" class="university-card">
+                    <div class="university-image">
+                        <img src="./images/santono.jpg"/>
+                    </div>
+                    <div class="university-info">
+                        <h3>University of Santo Tomas, Philippines</h3>
+                        
+                    </div>
+                </div>
+                
+                <div onclick="openDetail('5')" class="university-card">
+                    <div class="university-image">
+                        <img src="./images/malina.jpg"/>
+                    </div>
+                    <div class="university-info">
+                        <h3>Manila Central University , Philippines</h3>
+                        
+                    </div>
+                </div>
+                
+                <div onclick="openDetail('6')" class="university-card">
+                    <div class="university-image">
+                        <img src="./images/kazan.jpg"/>
+                    </div>
+                    <div class="university-info">
+                        <h3>Kazan Federal University , Russia</h3>
+                        
+                    </div>
+                </div>
+                
+        
+            </div>
+        </div>
+
+        </section>
+
+
+  
+      <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/+918875254904" class="whatsapp-float" target="_blank">💬</a>
+
+
+   <footer style="background-color:#0c2d56; color:white; padding:30px 20px; font-family:sans-serif;">
+  <div style="display:flex; flex-wrap:wrap; justify-content:space-between; max-width:1200px; margin:auto;">
+    
+     <!--About Us -->
+    <div style="flex:1; min-width:250px; margin-bottom:20px;">
+      <h3 style="color:#FFCC00;">About Us</h3>
+      <p style="line-height:1.6;">
+        We are a trusted overseas education consultancy guiding students toward top global universities. Our services include admission support, visa processing, travel help, and more.
+      </p>
+    </div>
+
+     <!--Contact Info -->
+    <div style="flex:1; min-width:250px; margin-bottom:20px;">
+      <h3 style="color:#FFCC00;">Contact Us</h3>
+      <p><strong>Email:</strong> <a href="mailto:globalmedconsultancy787@gmail.com" style="color:#ccc;">globalmedconsultancy787@gmail.com</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/+918875254904" target="_blank" style="color:#ccc;">+91 8875254904</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/globalmed_consultancy/" target="_blank" style="color:#ccc;">@globalmed_consultancy</a></p>
+    </div>
+
+     <!--Quick Links -->
+    <div style="flex:1; min-width:250px; margin-bottom:20px;">
+      <h3 style="color:#FFCC00;">Quick Links</h3>
+      <ul style="list-style:none; padding-left:0;">
+        <li><a href=./index.html style="color:white; text-decoration:none;">Home</a></li>
+        <li><a href="./Services.html" style="color:white; text-decoration:none;">Our Services</a></li>
+        <li><a href="/About.html" style="color:white; text-decoration:none;">About Us</a></li>
+      </ul>
+    </div>
+
+    
+
+  </div>
+
+  <hr style="margin:20px 0; border-color:#444;">
+  <p style="text-align:center; font-size:14px; color:#bbb;">© 2025 Globalmed Consultancy . All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
+
+<script>
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });

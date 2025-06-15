@@ -98,18 +98,18 @@
 }
 
 .dr-image-fmg-badge {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  color: white;
+  background: #ffc107;
+  color: #0c2d56;
+  font-weight: bold;
   padding: 10px 20px;
-  border-radius: 25px;
+  border-radius: 30px;
   font-size: 0.95rem;
-  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: none;
+  margin-top: 10px;
+  display: inline-block;
 }
+
 
 .dr-quote-mark {
   position: absolute;
