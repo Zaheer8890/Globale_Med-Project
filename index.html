@@ -154,49 +154,6 @@
 </div>
 
 
-<!-- OSHMain.html-->
-
-<div id="osh-content" style="margin: 3rem 0;"></div>
-
-<script>
-  fetch('OshMain.html')
-    .then(response => response.text())
-    .then(data => {
-      // Optional: Remove <html>, <head>, <body> tags if present
-      const cleanedData = data.replace(/<\/?(html|head|body)>/gi, '');
-      document.getElementById('osh-content').innerHTML = cleanedData;
-    })
-    .catch(error => {
-      console.error("Failed to load OshMain.html:", error);
-    });
-</script>
-
-
-<!-- osh university -->
-
-<!-- Unique Featured University Card -->
-<div class="featured-university-wrapper">
-  <div class="featured-university-card">
-    <div class="featured-university-image">
-      <img src="./images/OSH.jpeg" alt="OSH State University" />
-    </div>
-    <div class="featured-university-content">
-      <h2>OSH State University, Kyrgyzstan</h2>
-      <p class="featured-tagline">Our Director's Alma Mater — A Trusted Destination for Indian MBBS Aspirants</p>
-      <ul class="featured-highlights">
-        <li>🎓 WHO-recognized & globally respected</li>
-        <li>🌍 Studied by 100s of Indian students</li>
-        <li>💼 Proven career outcomes & FMGE success</li>
-        <li>🩺 Home to our Director, Dr. Hans (MBBS, OSH)</li>
-      </ul>
-      <a href="javascript:void(0)" onclick="openDetail('1')" class="featured-btn">Explore OSH University</a>
-    </div>
-    <div class="featured-label">Top Choice</div>
-  </div>
-</div>
-
-
-
 
 
  <!-- Universities Section -->
@@ -281,6 +238,28 @@
 
 
 
+    
+<!-- OSHMain.html-->
+
+<div id="osh-content" style="margin: 3rem 0;"></div>
+
+<script>
+  fetch('OshMain.html')
+    .then(response => response.text())
+    .then(data => {
+      // Optional: Remove <html>, <head>, <body> tags if present
+      const cleanedData = data.replace(/<\/?(html|head|body)>/gi, '');
+      document.getElementById('osh-content').innerHTML = cleanedData;
+    })
+    .catch(error => {
+      console.error("Failed to load OshMain.html:", error);
+    });
+</script>
+
+
+
+  
+
 
     <!-- Flags -->
 
@@ -309,27 +288,6 @@
 
 
 
-    <!-- Unique Featured University Card -->
-<div class="featured-university-wrapper">
-  <div class="featured-university-card">
-    <div class="featured-university-image">
-      <img src="./images/OSH.jpeg" alt="OSH State University" />
-    </div>
-    <div class="featured-university-content">
-      <h2>OSH State University, Kyrgyzstan</h2>
-      <p class="featured-tagline">Our Director's Alma Mater — A Trusted Destination for Indian MBBS Aspirants</p>
-      <ul class="featured-highlights">
-        <li>🎓 WHO-recognized & globally respected</li>
-        <li>🌍 Studied by 100s of Indian students</li>
-        <li>💼 Proven career outcomes & FMGE success</li>
-        <li>🩺 Home to our Director, Dr. Hans (MBBS, OSH)</li>
-      </ul>
-      <a href="javascript:void(0)" onclick="openDetail('1')" class="featured-btn">Explore OSH University</a>
-    </div>
-    <div class="featured-label">Top Choice</div>
-  </div>
-</div>
-
     <!-- Second Row -->
     <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
       <div style="flex: 1 1 30%; min-width: 150px; text-align: center;">
@@ -355,19 +313,30 @@
 </div>
 
 
+<!-- osh university -->
 
-
-   <div class="City">
-    <div class="City-image">
-        <img src="./images/Collage.jpeg" alt="A scenic view of a modern city skyline">
+<!-- Unique Featured University Card 
+<div class="featured-university-wrapper">
+  <div class="featured-university-card">
+    <div class="featured-university-image">
+      <img src="./images/OSH.jpeg" alt="OSH State University" />
     </div>
-    <div class="City-text">
-        <h2>A Global Medical Education Within Your Reach</h2>
-        <p>Why limit your dreams within borders when the world is full of opportunity? Countries like Russia, Kyrgyzstan, Kazakhstan, and Georgia offer high-quality MBBS programs at affordable costs — all in modern, well-equipped universities recognized by NMC, WHO, and other global medical bodies. Here, you don’t just gain a degree; you gain a global perspective, setting the foundation for a future where your skills are valued across continents.</p>
-        
+    <div class="featured-university-content">
+      <h2>OSH State University, Kyrgyzstan</h2>
+      <p class="featured-tagline">Our Director's Alma Mater — A Trusted Destination for Indian MBBS Aspirants</p>
+      <ul class="featured-highlights">
+        <li>🎓 WHO-recognized & globally respected</li>
+        <li>🌍 Studied by 100s of Indian students</li>
+        <li>💼 Proven career outcomes & FMGE success</li>
+        <li>🩺 Home to our Director, Dr. Hans (MBBS, OSH)</li>
+      </ul>
+      <a href="javascript:void(0)" onclick="openDetail('1')" class="featured-btn">Explore OSH University</a>
     </div>
+    <div class="featured-label">Top Choice</div>
+  </div>
 </div>
 
+-->
 
 
 <!-- home.html-->
@@ -385,6 +354,18 @@
     });
 </script>
 
+
+
+   <div class="City">
+    <div class="City-image">
+        <img src="./images/Collage.jpeg" alt="A scenic view of a modern city skyline">
+    </div>
+    <div class="City-text">
+        <h2>A Global Medical Education Within Your Reach</h2>
+        <p>Why limit your dreams within borders when the world is full of opportunity? Countries like Russia, Kyrgyzstan, Kazakhstan, and Georgia offer high-quality MBBS programs at affordable costs — all in modern, well-equipped universities recognized by NMC, WHO, and other global medical bodies. Here, you don’t just gain a degree; you gain a global perspective, setting the foundation for a future where your skills are valued across continents.</p>
+        
+    </div>
+</div>
 
 
     <!-- Benefits Section -->
@@ -548,7 +529,7 @@
 
     <div class="City">
     <div class="City-image">
-        <img src="./images/CollageStairs.jpeg" alt="A scenic view of a modern city skyline">
+        <img src="./images/new Stairs.jpg" alt="A scenic view of a modern city skyline">
     </div>
     <div class="City-text">
         <h2>Invest in a journey that transforms you</h2>
