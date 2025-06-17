@@ -156,20 +156,43 @@
             opacity: 0.8;
         }
 
-        .hero-image {
+       /* .hero-image {
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
-        
-            
+          
+}*/
+
+       /*.illustration img {
+    max-width: 40%; 
+    height: 50%;
+    display: block;
+    margin: 0 auto; 
+}*/
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-         /*.illustration {
-            width: 600px;
-            height: 600px;
-            
-        } */
+.illustration {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.illustration img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+}
+
+
 
         /* Who We Are Section */
         .who-we-are {
